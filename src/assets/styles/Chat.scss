@@ -1,0 +1,119 @@
+.friend-ct{
+    width: 240px;
+    height: 100%;
+    border-right: 2px solid var(--border);
+}
+
+.chat-ct{
+    width: calc(100% - 240px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .chat-header{
+        width: 100%;
+        min-height: 50px;
+        border-bottom: 2px solid var(--border);
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        color: var(--border);
+        font-size: 20px;
+    }   
+    .chat-footer{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        .send-btn{
+            width: 60px;
+            height: 30px;
+            border-radius: 6px;
+            border: 2px solid var(--border);
+            color: var(--border);
+            text-align: center;
+            line-height: 26px;
+            user-select: none;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            transition: .2s all ease-out;
+            &:hover{
+                background-color: #3d9292;
+            }
+        }
+    }
+}
+.chat-edit-ct{
+    width: 100%;
+    height: calc(46% - 50px);
+    position: relative;
+    .chat-edit{
+        height: calc(100% - 50px);
+        width: 100%;
+        outline: none;
+        color: #fff;
+        overflow-y: auto;
+        
+    }
+}
+.ant-image{
+    max-width: 40%;
+}
+.group-input{
+    background: transparent;
+    border: 1px solid var(--border);
+    height: 30px;
+    border-radius: 2px;
+    padding: 6px;
+}
+.friend-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border); 
+    .chat-switch-ct{
+        width: calc(100% - 40px);
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        .switch{
+            width: 46%;
+            height: 100%;
+            text-align: center;
+            user-select: none;
+            line-height: 40px;
+            color: #999;
+            cursor: pointer;
+        }
+        .active{
+            font-weight: bold;
+            color:var(--border);
+        }
+    }
+    .add{
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        line-height: 24px;
+        cursor: pointer;
+        border-radius: 2px;
+        border: 1px solid #d9d9d9;
+        // border-right: 1px solid #d9d9d9;
+        // border-bottom: 1px solid #d9d9d9;
+        transition: .2s all ease-out;
+        &:hover{
+            border-color: #3d9292;
+        }
+    }
+}
+
+.w-e-scroll{
+    p,span{
+        color: var(--border);
+    }
+}

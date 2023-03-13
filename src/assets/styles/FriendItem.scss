@@ -1,0 +1,49 @@
+.friend-item,.group-item{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    transition: .2s all ease-out;
+    cursor: pointer;
+    &:hover{
+        background: #434343;
+    }
+    .avatar{
+        height: 44px;
+        width: 44px;
+        border-radius: 4px;
+        img{
+            width: 100%;
+            border-radius: 4px;
+            height: 100%;
+        }
+    }
+    .info{
+        width: calc(100% - 44px);
+        display: flex;
+        padding: 0 5px;
+        .name{
+            color: var(--border);
+            display: inline-block;
+            width: calc(100% - 50px);
+        }
+        .status{
+            display: inline-block;
+            width: 50px;
+            line-height: 50px;
+            user-select: none;
+            text-align: center;
+        }
+        .online{
+            color: #95de64;
+        }
+        .offline{
+            color: #ff9c6e;
+        }
+    }
+}
+.friend-item-active,.group-item-active{
+    background: #434343;
+}

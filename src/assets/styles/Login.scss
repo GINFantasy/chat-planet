@@ -1,0 +1,395 @@
+.login-wrapper{
+	.switch{
+		width: 260px;
+		height: 50px;
+		background-color: transparent;
+		position: absolute;
+		right: 40px;
+		top: 40px;
+		z-index: 1;
+	
+	}
+	.switch span{
+		width: 100px;
+		height: 40px;
+		top: -10px;
+		line-height: 40px;
+		font-size:16px;
+		color: white;
+		text-shadow: 1px 1px 1px black;
+		position: absolute;
+		text-align: center;
+		border-radius: 10px;
+		transition: all 0.5s;
+	}
+	.switch span:hover{
+		cursor: pointer;
+		text-shadow: 1px 1px 1px rgb(234, 213, 162);
+		background-color:rgb(64, 157, 150);
+	}
+}
+.Signup{
+	right:0px;
+    background-color: rgb(144, 172, 165);
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.Signup:hover{
+	box-shadow: 2px 2px 3px rgb(253, 213, 152);
+}
+.Login{
+	background-color: rgb(144, 172, 165);
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+}
+.Login:hover{
+	box-shadow: 2px 2px 3px rgb(253, 213, 152);
+}
+.login-wrapper{
+	width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	transform: translate(-50%,-50%);
+    background-color: transparent;
+    transition: 0.5s ease-out;
+    transition-delay: 0.5s;
+    
+}
+.line{
+	height: 3px;
+	width: 0px;
+	display: block;
+	padding-right: 32px;
+	background-color: rgb(64, 157, 150);
+	-webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    -ms-transition: .3s ease-out;
+    transition: width .3s ease-out;
+    margin-left: 8px;
+}
+.content{
+	width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-shadow: 1px 1px 1px black;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    background-color: rgba(133, 175, 177,40%);
+    backdrop-filter: blur(5px) brightness(100%);
+    transition: backdrop-filter 0.5s;
+}
+.welcome{
+	width: 340px;
+	height: 400px;
+	background-color: transparent;
+}
+.astr:nth-child(1){
+	width: 340px;
+	height: 300px;
+	background-color: transparent;
+	transition: all 0.5s;
+	position: absolute;
+	top: 20px;
+	left: 6px;
+}
+.astr:nth-child(2){
+	width: 180px;
+	height: 240px;
+	background-color: transparent;
+	transition: all 0.5s;
+	position: absolute;
+	top: 46%;
+	left: 12%;
+	transform: translate(0,-50%);
+}
+.welcome span{
+	font-size: 36px;
+	font-weight: bold;
+	color: rgb(145, 167, 204);
+	text-shadow: 2px 2px 2px black;
+	position: absolute;
+	bottom: 20px;
+	left: 100px;
+	transition: all 0.5s;
+}
+
+.input-area:before{
+	content: '';
+	position: absolute;
+	top:10px;
+	left: 10px;
+	display: block;
+	height: 340px;
+	width: 2px;
+	background-color: rgba(255,255,255,20%);
+	vertical-align: middle;
+}
+.input-area{
+	width: 340px;
+	height: 360px;
+	background-color: transparent;
+	position: absolute;
+	top:50%;
+	left: 340px;
+	transform: translateY(-50%);
+}
+.login-wrapper input:not(.btn){
+    background-color: transparent;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0);
+    width: 184px;
+    height: 40px;
+    outline: none;
+    margin-left: 8px;
+}
+.login{
+	width: 260px;
+	height: 240px;
+	position: absolute;
+    right: 6%;
+    top: 70px;
+    transform: translateY(0);
+    transition: all 0.25s;
+}
+.inputWrapper{
+	background-color: rgba(133, 175, 177,80%);
+	border: 0px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+    &:nth-child(1){
+        margin-top: 20px;
+    }
+}
+.inputWrapper:hover .line{
+	width: 82%;
+}
+
+.text{
+	padding-left: 34px;
+	color: white;	
+}
+
+.btn{
+	border: 1px solid rgba(255,255,255,20%);
+    color: white;
+    background-color: rgb(64, 157, 150);
+    text-shadow: 1px 1px 1px rgb(234, 213, 162);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    overflow: hidden;
+    transition: 0.2s;
+    position: absolute;   
+    left: 70px;
+    animation: shadowBod 1s infinite;
+    transition: transform 0.5s ease,background-color 0.5s,text-shadow 0.5s,color 0.5s,box-shadow 0.5s;
+	top:200px;
+}
+.btn:hover{
+	color: white;
+    background: rgb(242, 167, 81);
+    text-shadow: 2px 2px 2px black;
+    transform: rotateX(0deg);    
+}
+.btn:active{
+	color: white;
+	border: 3px solid rgba(255,255,255,40%);
+}
+.register{
+	width: 260px;
+	height: 260px;
+	position: absolute;
+    right: 6%;
+    top: 70px;
+    transform: translateY(0);
+	transition: all 0.25s;
+}
+.switch-active{
+    background-color: rgb(64, 157, 150);
+    border-width: 2px;
+    border-style: solid;
+    border-color: white black black white;
+}
+.star {
+	display:block;
+	width:4px;
+	height:4px;
+	border-radius:50%;
+	background:#FFF;
+	position:relative;
+	transform-origin:100% 0;
+	animation-direction: normal;
+	opacity:0;
+}
+.star:nth-child(1){
+ 	top:10px;
+  	right:20%;
+  	animation:shootingStar 1.5s infinite ease-out;
+}
+.star:nth-child(1):after{
+	animation: starTail 1.5s infinite ease-out;
+}
+.star:nth-child(2){
+ 	top:120px;
+  	left: 60%;
+  	animation:shootingStar 1s infinite ease-out;
+}
+.star:nth-child(2):after{
+	animation: starTail 1s infinite ease-out;
+}
+.star:nth-child(3){
+ 	top:80px;
+  	left:80%;
+  	animation:shootingStar 1.6s infinite ease-out;
+}
+.star:nth-child(3):after{
+	animation: starTail 1.6s infinite ease-out;
+}
+.star:nth-child(4){
+ 	top:30px;
+  	left:70%;
+  	animation:shootingStar 2s infinite ease-out;
+}
+.star:nth-child(4):after{
+	animation: starTail 2s infinite ease-out;
+}
+.star:nth-child(5){
+ 	top:80%;
+  	left:90%;
+  	animation:shootingStar 1.3s infinite ease-out;
+}
+.star:nth-child(5):after{
+	animation: starTail 1.3s infinite ease-out;
+}
+.star:nth-child(6){
+ 	top:80px;
+  	left:30%;
+  	animation:shootingStar 2.5s infinite ease-out;
+}
+.star:nth-child(6):after{
+	animation: starTail 2.5s infinite ease-out;
+}
+.star:after {
+  content:'';
+  position:absolute;
+  top:0px;
+  left:4px;
+  border:2px solid #F00;
+  border-width:2px 150px 2px 150px; 
+  border-color:transparent transparent transparent #FFF;
+  transform:rotate(-45deg) translate3d(1px, -1px, 0);
+  transform-origin:0% 100%;
+  animation:starTail 1.5s infinite ease-out;
+  animation-direction: normal;
+}
+@keyframes wrapper{
+	0%{
+		transform: translate(-50%,0);
+	}
+	10%{
+		transform: translate(-50%,70%);
+	}
+	20%{
+		transform: translate(-50%,-40%);
+	}
+	60%{
+		transform: translate(-50%,20%);
+	}
+	80%{
+		transform: translate(-50%,-10%);
+	}
+	100%{
+		transform: translate(-50%,50%);
+	}
+}
+@keyframes starTail {
+  0% {
+    
+  }
+  50% {
+    transform:scale(1) rotate(-45deg) translate(0px, 0px);
+  }
+  100% {
+    transform:scale(0.5) rotate(-45deg) translate(0px, -1px);
+  }
+}
+
+@keyframes shootingStar {
+  0% {
+    opacity:0;
+    transform:scale(0) rotate(0) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity:1;
+    transform:scale(1) rotate(0) translate3d(-200px, 200px, 0);
+  }
+  100% {
+    opacity:0;
+    transform:scale(1) rotate(0) translate3d(-300px, 300px, 0);
+  }
+}
+@keyframes shadowBod{
+	0%{
+		box-shadow: 3px 0px 2px rgb(228, 198, 127),
+					0px 3px 2px rgb(228, 198, 127),
+					-3px 0px 2px rgb(228, 198, 127),
+					0px -3px 2px rgb(228, 198, 127);
+	}
+	12.5%{
+		box-shadow: 3px 0px 5px rgb(228, 198, 127),
+					0px 3px 5px rgb(228, 198, 127),
+					-3px 0px 5px rgb(228, 198, 127),
+					0px -3px 5px rgb(228, 198, 127);
+	}
+	25%{
+		box-shadow: 3px 0px 8px rgb(228, 198, 127),
+					0px 3px 8px rgb(228, 198, 127),
+					-3px 0px 8px rgb(228, 198, 127),
+					0px -3px 8px rgb(228, 198, 127); 
+	}
+	50%{
+		box-shadow: 3px 0px 10px rgb(228, 198, 127),
+					0px 3px 10px rgb(228, 198, 127),
+					-3px 0px 10px rgb(228, 198, 127),
+					0px -3px 10px rgb(228, 198, 127); 
+	}
+	62.5%{
+		box-shadow: 3px 0px 10px rgb(228, 198, 127),
+					0px 3px 10px rgb(228, 198, 127), 
+					-3px 0px 10px rgb(228, 198, 127),
+					0px -3px 10px rgb(228, 198, 127);
+	}
+	75%{
+		box-shadow: 3px 0px 8px rgb(228, 198, 127),
+					0px 3px 8px rgb(228, 198, 127),
+					-3px 0px 8px rgb(228, 198, 127),
+					0px -3px 8px rgb(228, 198, 127);
+	}
+	87.5%{
+		box-shadow: 3px 0px 5px rgb(228, 198, 127),
+					0px 3px 5px rgb(228, 198, 127),
+					-3px 0px 5px rgb(228, 198, 127),
+					0px -3px 5px rgb(228, 198, 127);
+	}
+	100%{
+		box-shadow: 3px 0px 2px rgb(228, 198, 127),
+					0px 3px 2px rgb(228, 198, 127),
+					-3px 0px 2px rgb(228, 198, 127),
+					0px -3px 2px rgb(228, 198, 127); 
+	}
+}

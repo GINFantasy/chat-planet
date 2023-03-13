@@ -1,0 +1,30 @@
+.ant-pro-card{
+    background: transparent;
+}
+.ant-pro-list .ant-pro-list-row.ant-pro-list-row-selected{
+    background-color: #434343;
+    &:hover{
+        background-color: #434343;
+    }
+}
+.ant-pro-list .ant-pro-list-row:hover{
+    background-color: #434343;
+}
+.ant-alert-info{
+    border-color: var(--border)!important;
+}
+.ant-pro-list{
+    height: 100%;
+}
+
+.ant-pro-card{
+    height: 100%;
+}
+.ant-list {
+    height: calc(100% - 112px);
+    padding-right: 10px;
+    overflow: auto;
+}
+.ant-pro-table-list-toolbar-container{
+    height: 64px;
+}

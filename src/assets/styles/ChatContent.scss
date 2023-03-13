@@ -1,0 +1,90 @@
+.chat-content{
+    height: calc(66% - 50px);
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    overflow: auto;
+}
+.bubble-ct{
+    width: 100%;
+    position: relative;
+    min-height:60px;
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    .bubble-avatar{
+        color: #fff;
+        width: 34px;
+        height: 34px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        background-size: contain;
+    }
+}
+.content-ct{
+    width: 100%;
+    position: relative;
+    margin: 0 10px;
+    display: flex;
+    max-width: 70%;
+    .bubble-content{
+        display: inline-block;
+        padding: 4px 8px;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        background: #fdfbfa;
+        color: #282c34;
+        position: relative;
+        bottom: -24px;
+        white-space:pre-wrap;
+        word-wrap : break-word ;
+        overflow: hidden;
+        min-height: 0;
+        p{
+            margin: 0;
+        }
+    }
+    .bubble-name{
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+    }
+}
+.bubble-send{
+    .bubble{
+        justify-content: flex-end;
+    }
+    .content-ct{
+        justify-content: end;
+    }
+    .bubble-name{
+        right: 0;
+    }
+}
+
+.bubble-recieve{
+    
+    .bubble-avatar{
+        order: -1;
+    }
+    .content-ct{
+        order: 1;
+    }
+    .bubble-name{
+        left: 0;
+    }
+}
+
+.chat-edit{
+    .w-e-image-container{
+        max-width: 20%;
+    }
+}
